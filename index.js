@@ -1,4 +1,4 @@
-const senatorList = require("./data/senatorList.json");
+import senatorList from "./data/senatorList.js";
 
 const _trim = (input) => {
   return input
@@ -10,23 +10,32 @@ const _trim = (input) => {
     .toLowerCase();
 };
 
-module.exports = {
-    all: () => {
-        
-    return senatorList;
-    },
+const all = () => {
+  return senatorList;
+};
 
-    findbystate: (state) => {
-        
-    state = _trim(state);
-        
-    if (!state || state == "") {
-        throw new Error("Invalid Nigeria State");
-    }
+const findbystate = (state) => {
+  state = _trim(state);
 
-    return senatorList.find(function (res) {
-        return _trim(res.state) === _trim(state);
-    });
-        
-    }
-}
+  if (!state || state == "") {
+    throw new Error("Invalid Nigeria State");
+  }
+
+  return senatorList.filter((details) => {
+    return _trim(details.state).includes(_trim(state)) ? details : "";
+  });
+};
+
+const findbyname = (name) => {
+  name = _trim(name);
+
+  if (!name || name == "") {
+    throw new Error("Invalid name");
+  }
+
+  return senatorList.filter((details) => {
+    return _trim(details.name).includes(_trim(name)) ? details : "";
+  });
+};
+
+export { all, findbystate, findbyname };

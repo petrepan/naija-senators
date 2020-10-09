@@ -1,6 +1,7 @@
 {
   "name": "naija-senators",
-  "version": "1.0.1",
+  "version": "1.0.2",
+   "type": "module",
   "description": "A library showing the list of nigerian senators with their contact infos",
   "main": "index.js",
   "scripts": {
