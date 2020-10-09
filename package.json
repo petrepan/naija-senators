@@ -16,7 +16,6 @@
     "government",
     "endsars"
   ],
-  "publishConfig": { "registry": "https://npm.pkg.github.com/" },
   "homepage": "https://github.com/petrepan/naija-senator#readme",
   "author": "Peter Awotola",
   "license": "ISC"
