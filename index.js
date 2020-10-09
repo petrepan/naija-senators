@@ -14,7 +14,7 @@ const all = () => {
   return senatorList;
 };
 
-const findbystate = (state) => {
+const findbystate = (state = "") => {
   state = _trim(state);
 
   if (!state || state == "") {
@@ -26,7 +26,7 @@ const findbystate = (state) => {
   });
 };
 
-const findbyname = (name) => {
+const findbyname = (name = "") => {
   name = _trim(name);
 
   if (!name || name == "") {
@@ -37,5 +37,7 @@ const findbyname = (name) => {
     return _trim(details.name).includes(_trim(name)) ? details : "";
   });
 };
+
+findbyname()
 
 export { all, findbystate, findbyname };

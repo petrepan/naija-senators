@@ -10,6 +10,21 @@ npm install naija-senators
 
 ```
 
+### Example
+
+```Javascript
+// ES6
+import {all, findbystate, findbyname} from 'naija-senators';
+
+console.log(all()); //return all the list of senators(state, name, email, phone)
+console.log(findbystate("ekiti")) //returns all the list of senators in ekiti(state, name, email, phone)
+console.log(findbyname("az")) //returns all the list of senators that matches the string "az"(state, name, email, phone)
+
+```
+
+Note: ES5 syntax and below is not supported. Add `type: module` to your package.json file
+
+
 ### Structure
 
 <!-- ![screenshot](https://pasteboard.co/JuShMfn.png) -->
@@ -23,27 +38,11 @@ phone: string;
 }]
 ```
 
-### Example
-
-```Javascript
-//ES5
-const naijaSenators = require('naija-senators');
-
-// ES6
-import naijaSenators from 'naija-senators';
-
-
-console.log(naijaSenators.all()); //return all the list of senators(state, name, email, phone)
-console.log(naijaSenators.findbystate("ekiti")) //returns all the list of senators in ekiti(state, name, email, phone)
-console.log(naijaSenators.findbyname("az")) //returns all the list of senators that matches the string "az"(state, name, email, phone)
-
-```
-
-| function            | argument | response                                                                             |     |     |
-| ------------------- | -------- | ------------------------------------------------------------------------------------ | --- | --- |
-| .all()              | none     | it returns an array of all senators(name,emails and phone number)                    |     |     |
-| .findbystate(state) | state    | it returns the list of senators in the given argument |     |     |
-| .findbyname(name) | name    | it returns the list of senators in the argument(list of senators that equals the argument) |     |     |
+| function            | argument | response                                                                                   |     |     |
+| ------------------- | -------- | ------------------------------------------------------------------------------------------ | --- | --- |
+| .all()              | none     | it returns an array of all senators(name,emails and phone number)                          |     |     |
+| .findbystate(state) | state    | it returns the list of senators in the given argument                                      |     |     |
+| .findbyname(name)   | name     | it returns the list of senators in the argument(list of senators that equals the argument) |     |     |
 
 ### Features
 
