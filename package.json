@@ -6,12 +6,17 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/petrepan/naija-senators.git"
+  },
   "keywords": [
     "naija",
     "senators",
     "government",
     "endsars"
   ],
+  "publishConfig": { "registry": "https://npm.pkg.github.com/" },
   "homepage": "https://github.com/petrepan/naija-senator#readme",
   "author": "Peter Awotola",
   "license": "ISC"
