@@ -1,0 +1,17 @@
+{
+  "name": "naija-senators",
+  "version": "1.0.0",
+  "description": "A library showing the list of nigerian senators with their contact infos",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "naija",
+    "senators",
+    "government",
+    "endsars"
+  ],
+  "author": "Peter Awotola",
+  "license": "ISC"
+}
