@@ -11,7 +11,7 @@ npm install naija-senators
 ```
 
 ### Structure
-![screenshot](https://github.com/petrepan/naija-senators/blob/main/structure.png)
+<!-- ![screenshot](https://pasteboard.co/JuShMfn.png) -->
 
 ### Example
 
